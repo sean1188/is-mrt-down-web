@@ -6,7 +6,7 @@
 ###########################################################
 # Update this line with the R packages to install:
 
-my_packages = c("httr","Shiny")
+my_packages = c("httr","R6","shiny")
 
 ###########################################################
 

@@ -1,2 +1,2 @@
 all:
-	R -e "shiny::runApp('../Shiny-App')"
+	R -e "shiny::runApp('.')"
