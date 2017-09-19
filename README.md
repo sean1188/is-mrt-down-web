@@ -1,3 +1,3 @@
 # is-mrt-down-web
-## Website providing latest MRT Delay info
+Website displaying realtime MRT delay information.
 Shiny and httr packages required! 
