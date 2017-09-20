@@ -2,23 +2,37 @@
 
 fluidPage(
   fluidRow(
-    column(5,
-    img(src='logo.png', align = "left"),
-    h1("is MRT Down?")
+    column(12,
+    titlePanel("is MRT Down?")
     )
   ),
 
-  helpText(" Realtime information on train delays."),
+  helpText("Realtime information on train delays."),
 
-  wellPanel(
-    uiOutput("one")
-  ),
+  fluidRow(
+    column(2,
+      sidebarPanel(
+        verticalLayout(
+          a("About", href="http://www.covve.co"),
+          a(href="","API")
+        ),
+        width = 12
+      )
+    ),
 
-  wellPanel(
-    uiOutput("two")
-  ),
+    column(10,
+      wellPanel(
+        uiOutput("one")
+      ),
 
-  wellPanel(
-    uiOutput("three")
+      wellPanel(
+        uiOutput("two")
+      ),
+
+      wellPanel(
+        uiOutput("three")
+      )
+    )
   )
+
 ) -> ui
